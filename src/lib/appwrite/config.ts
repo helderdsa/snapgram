@@ -7,8 +7,8 @@ export const appwriteConfig = {
 
 export const client = new Client();
 
-client.setProject(appwriteConfig.projectid)
 client.setEndpoint(appwriteConfig.url)
+client.setProject(appwriteConfig.projectid)
 
 export const account = new Account(client);
 export const databases = new Databases(client);
